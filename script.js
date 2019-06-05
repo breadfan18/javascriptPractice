@@ -17,5 +17,5 @@ console.log("The numbers match: " + theNumbersMatch);
 
 
 //Ternary Operator
-//basically like saying if a == b, its a match, otherwise no match
+//basically like saying if firstFraction == secondFraction, its firstFraction match, otherwise no match
  a == b ? console.log("Match") : console.log("No Match");
