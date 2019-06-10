@@ -1,4 +1,4 @@
-//object will be capital letters
+//This is how to declare an object constructor. object will begin with a capital letter.
 function Course(title, instructor, level, published, views) {
     this.title=title;
     this.instructor=instructor;
@@ -10,8 +10,7 @@ function Course(title, instructor, level, published, views) {
     }
 }
 
-//now we use the object as such"=:
-
+//now we use the object as such:
 var course01 = new Course("JavaScript101", "Swaroop Uprety", 1, true, 0);
 console.log(course01);
 
