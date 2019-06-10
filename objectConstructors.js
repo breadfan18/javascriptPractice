@@ -22,7 +22,7 @@ console.log(course02);
 
 var courses = [
     new Course("JavaScript101", "Swaroop Uprety", 1, true, 0),
-    new Course("Java101", "Swaroop Uprety", 5, true, 5)
+    new Course("Java101", "Anshu Thapa", 5, true, 5)
 ];
 
 console.log(courses);
@@ -30,3 +30,4 @@ console.log(courses);
 //to call a specific property of the courses array, then you just call them like: Use the index of the array to retrive the course and then print the property.
 console.log(courses[0].title);
 console.log(courses[1].updateViews());
+console.log(courses[0].instructor);
