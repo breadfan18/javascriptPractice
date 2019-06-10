@@ -47,3 +47,5 @@ var course = {
 console.log(course.views);
 course.updateViews();
 console.log(course.views);
+
+
