@@ -52,8 +52,8 @@ function changeColorOnTouchCircle3() {
 }
 
 function changeColorOnTouchCircle4() {
-    CIRCLE4.style.backgroundColor = "yellow";
-    CIRCLE4.style.borderColor = "yellow";
+    CIRCLE4.style.backgroundColor = "gray";
+    CIRCLE4.style.borderColor = "gray";
 }
 
 // When the mouse moves, run the mouseCoordinates function.
