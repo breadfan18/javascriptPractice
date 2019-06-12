@@ -12,14 +12,19 @@ function mouseCoordinates(e) {
     // Take total window width, subtract current coordinate and width of circle.
     // Do the same for Y coordinate (distance from top viewport edge).
     var horizontalPosition = windowWidth - e.clientX - 26;
-    var verticalPosition= windowHeight - e.clientY - 26;
+    var verticalPosition = windowHeight - e.clientY - 26;
 
-    var horizontalPositionForCircle2 = windowWidth + e.clientX - 55;
-    var verticalPositionForCircle2 = windowHeight + e.clientX - 55;
 
     // Set horizontal and vertical position.
     CIRCLE.style.left = horizontalPosition + 'px';
     CIRCLE.style.top = verticalPosition + 'px';
+}
+
+function mouseCoordinatesCircle2(e) {
+
+    var horizontalPositionForCircle2 = windowWidth + e.clientX - 28;
+    var verticalPositionForCircle2 = windowHeight + e.clientX - 28;
+
 
     CIRCLE2.style.left = horizontalPositionForCircle2 + 'px';
     CIRCLE2.style.top = verticalPositionForCircle2 + 'px';
@@ -37,6 +42,7 @@ function changeColorOnTouch() {
 
 // When the mouse moves, run the mouseCoordinates function.
 AREA.addEventListener('mousemove', mouseCoordinates, false);
+AREA.addEventListener('mousemove', mouseCoordinatesCircle2, false);
 
 // When the mouse touches the circle, run the changeColorOnTouch function.
 CIRCLE.addEventListener('mouseenter', changeColorOnTouch, false);
