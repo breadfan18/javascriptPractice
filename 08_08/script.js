@@ -57,7 +57,20 @@ function start() {
 
 // Reset everything:
 function reset() {
-    console.log("reset button has been pressed!");
+    clearInterval(interval);
+    interval = null;
+    //set the clock back to 0:
+    timer = [0, 0, 0, 0];
+    //set timerRunning back to false:
+    timerRunning = false;
+
+    //clear the testArea:
+    testArea.value = "";
+    //set the time back:
+    theTimer.innerHTML = "00:00:00";
+    //set the test area wrapper back to gray:
+    testWrapper.style.borderColor = "grey";
+
 }
 
 // Event listeners for keyboard input and the reset
