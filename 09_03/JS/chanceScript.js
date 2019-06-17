@@ -6,7 +6,7 @@ var i = 1;
 while (MAX) {
     let randomValue = Math.floor(Math.random() * (MAX - MIN)) + MIN;
 
-    if (randomValue == testNumber) {
+    if (randomValue === testNumber) {
         break;
     }
 
