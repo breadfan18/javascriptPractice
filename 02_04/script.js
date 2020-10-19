@@ -7,5 +7,5 @@ var pens;
 pens = ["red", "green", "blue", "orangeX"];
 
 console.log(pens);
+console.log(pens);
 
-console.log(pens[1]);
