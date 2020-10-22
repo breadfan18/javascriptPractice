@@ -11,11 +11,16 @@ var newPens = pens.slice();
 console.log("Newpens array: " + newPens);
 
 newPens.shift();
-newPens.unshift("black", "purple",  "maroon");
+newPens.unshift("black", "purple", "maroon");
 console.log(newPens);
 
 newPens.splice(0, 2);
 
+var indexOfMaroon = newPens.indexOf("orange");
+console.log("Index of orange: " + indexOfMaroon);
+console.log("Value at index " + indexOfMaroon + " is " + "\"" + newPens[indexOfMaroon] + "\"");
+
+console.log(newPens.join(" | "));
 // METHODS:
 // Reverse the array:
 // pens.reverse();
