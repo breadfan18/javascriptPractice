@@ -56,3 +56,12 @@ console.log("After: ", newPens);
 
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+function findBiggestFraction(a, b) {
+    a > b ? console.log("a: " + a) : console.log("b " + b);
+}
+
+var hell = 3/4;
+var bell = 5/7;
+findBiggestFraction(hell, bell);
