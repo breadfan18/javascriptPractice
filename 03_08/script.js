@@ -59,9 +59,13 @@ console.log("After: ", newPens);
 
 
 function findBiggestFraction(a, b) {
-    a > b ? console.log("a: " + a) : console.log("b " + b);
+    var result;
+    a > b ? result=["firstFraction", a] : result=["secondFraction", b];
+    return result;
 }
 
-var hell = 3/4;
-var bell = 5/7;
-findBiggestFraction(hell, bell);
+var fractionResult = findBiggestFraction(5/7, 3/4);
+
+console.log(fractionResult);
+
+console.log(fractionResult[1]);
