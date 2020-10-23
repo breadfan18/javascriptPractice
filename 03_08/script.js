@@ -58,14 +58,13 @@ console.log("After: ", newPens);
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 
-function findBiggestFraction(a, b) {
+var a = 5/7;
+var b = 18/25;
+
+var theBiggest = function () {
     var result;
-    a > b ? result=["firstFraction", a] : result=["secondFraction", b];
+    a > b ? result = ["a", a] : result = ["b", b];
     return result;
-}
+};
 
-var fractionResult = findBiggestFraction(5/7, 3/4);
-
-console.log(fractionResult);
-
-console.log(fractionResult[1]);
+console.log(theBiggest());;
