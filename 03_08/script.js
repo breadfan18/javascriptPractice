@@ -57,14 +57,13 @@ console.log("After: ", newPens);
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
+var firstFraction = 3/4;
+var secondFraction = 5/7;
 
-var a = 5/7;
-var b = 18/25;
-
-var theBiggest = function () {
+var theBiggest = (function (a,b) {
     var result;
     a > b ? result = ["a", a] : result = ["b", b];
     return result;
-};
+})(firstFraction , secondFraction);
 
-console.log(theBiggest());;
+console.log(theBiggest);
