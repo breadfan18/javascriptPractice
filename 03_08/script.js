@@ -66,4 +66,5 @@ var theBiggest = (function (a,b) {
     return result;
 })(firstFraction , secondFraction);
 
+
 console.log(theBiggest);
