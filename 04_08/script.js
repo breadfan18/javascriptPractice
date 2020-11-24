@@ -1,3 +1,7 @@
-const MYCONSTANT = 5;
+function logScope() {
+    var localVar = 2;
 
-console.log(MYCONSTANT);
+    console.log(localVar);
+}
+
+logScope();
