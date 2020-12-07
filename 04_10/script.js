@@ -1,14 +1,7 @@
-var course = new Object();
-
-var course = {
-    title: "JavaScript Essential Training",
-    instructor: "Morten Rand-Hendriksen",
-    level: 1,
-    published: true,
-    views: 0,
-    updateViews: function() {
-        return ++course.views;
-    }
+function Course(title, instructor, level, published, views) {
+    this.title = title;
+    this.instructor = instructor;
+    this.level = level;
+    this.published = published;
+    this.views = views;
 }
-
-console.log(course);
