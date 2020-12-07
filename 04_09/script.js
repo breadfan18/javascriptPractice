@@ -14,10 +14,12 @@ course  = {
     published: true,
     views: 0,
     updateViews: function () {
-        return course.views+=2;
+        return ++course.views;
     }
 }
 
-console.log(course.views)
+console.log(course);
+console.log(course.title);
+console.log(course.views);
 course.updateViews();
-console.log(course.views)
+console.log(course.views);
