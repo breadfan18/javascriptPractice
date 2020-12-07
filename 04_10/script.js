@@ -29,5 +29,5 @@ var courses = [
 
 
 
-console.log(course01);
-console.log(course02);
+console.log(courses[0]);
+console.log(courses[1]);
