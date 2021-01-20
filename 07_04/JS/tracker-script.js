@@ -15,8 +15,8 @@ function mouseCoordinates(e) {
     var horizontalPosition = windowWidth - e.clientX - 100;
     var verticalPosition = windowHeight - e.clientY - 100;
 
-    var horizontalPositionForCircle2 = windowWidth - e.clientX-200;
-    var verticalPositionForCircle2 = windowHeight - e.clientY-200;
+    var horizontalPositionForCircle2 = windowWidth - e.clientX-50;
+    var verticalPositionForCircle2 = windowHeight - e.clientY-50;
     var horizontalPositionForCircle3 = windowWidth - e.clientX-150;
     var verticalPositionForCircle3 = windowHeight - e.clientY-150;
     var horizontalPositionForCircle4 = windowWidth - e.clientX-250;
@@ -32,8 +32,8 @@ function mouseCoordinates(e) {
     CIRCLE3.style.top = verticalPositionForCircle3 + 'px';
     CIRCLE3.style.left = horizontalPositionForCircle3 + 'px';
 
-    CIRCLE4.style.top = verticalPositionForCircle4 + 'px';
-    CIRCLE4.style.left = horizontalPositionForCircle4 + 'px';
+    CIRCLE4.style.right = verticalPositionForCircle4 + 'px';
+    CIRCLE4.style.bottom = horizontalPositionForCircle4 + 'px';
 }
 
 function changeColorOnTouch() {
